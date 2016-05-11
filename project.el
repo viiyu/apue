@@ -1,6 +1,6 @@
 ;; This contains a list of projects you have visited.
 (setq project_file "/home/xiaozhi/workshop/working/apue/SConscript")
-(setq external_include "_external/include")
+(setq external_include "_external/")
 (setq project_path (file-name-directory project_file))
 
 (ede-cpp-root-project "apue"

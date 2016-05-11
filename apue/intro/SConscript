@@ -1,0 +1,16 @@
+# -*- python -*-
+
+Import('env')
+env = env.Clone()
+src_map = {'hello' : ['hello.c'],
+           'ls1' : ['ls1.c'],
+           'getcputc' : ['getcputc.c'],
+           'mycat' : ['mycat.c'],
+           'testerror' : ['testerror.c'],
+           'uidgid' : ['uidgid.c'],
+           'shell1' : ['shell1.c'],
+           'shell2' : ['shell2.c']}
+libs = ['apue']
+for k in src_map:
+    env.Program(k, src_map[k], LIBS = libs)
+
