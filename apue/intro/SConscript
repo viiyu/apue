@@ -14,6 +14,5 @@ src_map = {
     # 'shell2' : ['shell2.cpp']
 }
 libs = ['apue']
-
 for k in src_map:
     env.Program(k, src_map[k], LIBS = libs)
